@@ -6,7 +6,7 @@ const ActorDetail = ({ actor }) => {
       <h2>Details for {actor.name}</h2>
       <p>Height: {actor.height}</p>
       <p>Birth Year: {actor.birth_year}</p>
-      {/* Add other details here if needed */}
+     {/* will add later  */}
     </div>
   );
 };
