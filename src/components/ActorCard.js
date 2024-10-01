@@ -1,12 +1,23 @@
 import React from 'react';
+import './ActorList.css';
 
-const ActorCard = ({ actor, onDetailClick }) => {
+const ActorCard = ({ actor }) => {
   return (
     <div className="actor-card">
-      <h3>{actor.name}</h3>
-      <p>Height: {actor.height}</p>
-      <p>Birth Year: {actor.birth_year}</p>
-      <button onClick={() => onDetailClick(actor)}>Detail</button>
+      <div className="actor-info">
+        <img
+          src={`https://ui-avatars.com/api/?name=${actor.name}&background=random`}
+          alt={actor.name}
+          className="actor-image"
+        />
+        <div className="actor-details">
+          <p className="actor-name">{actor.name}</p>
+          <p className="actor-role">DOB:{actor.birth_year}</p>
+          <p className="actor-role">Height: {actor.height}</p>
+
+        </div>
+      </div>
+      <button className="actor-button">DETAIL</button>
     </div>
   );
 };

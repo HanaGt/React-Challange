@@ -9,7 +9,6 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        <h1>Star Wars Actors</h1>
         <ActorList />
       </div>
     </Provider>
