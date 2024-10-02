@@ -11,6 +11,13 @@ Star Wars Actors is a React-based application that fetches and displays a list o
 - Allows users to view detailed information about each actor.
 - Interactive design with a close button to hide details.
 
+## Technologies Used
+
+- **React**: JavaScript library for building user interfaces.
+- **Redux Toolkit**: For state management.
+- **React Testing Library**: For unit testing components.
+- **CSS**: For styling the application.
+
 ## Screenshots
 
 Here are some screenshots of the application for all sizes(large , medium and small):
@@ -23,22 +30,18 @@ Here are some screenshots of the application for all sizes(large , medium and sm
 
 ![alt text](tablet.jpg)
 
-# MObile 
+# Mobile 
 
 ![alt text](mobile.jpg)
 
+# Detail Component
 
-## Technologies Used
-
-- **React**: JavaScript library for building user interfaces.
-- **Redux Toolkit**: For state management.
-- **React Testing Library**: For unit testing components.
-- **CSS**: For styling the application.
+![alt text](image-1.png)
 
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/React-Challenge.git
+   git clone https://github.com/HanaGt/React-Challenge.git
 
 2. Navigate to the project directory:
     cd star-wars-actors
