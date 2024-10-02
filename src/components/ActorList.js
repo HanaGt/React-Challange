@@ -20,6 +20,7 @@ const ActorList = () => {
     setSelectedActor(actor); 
   };
 
+
   const middleIndex = Math.ceil(actors?.results.length / 2);
   const leftActors = actors?.results.slice(0, middleIndex);
   const rightActors = actors?.results.slice(middleIndex);
