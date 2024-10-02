@@ -1,18 +1,23 @@
 import React, { useState } from 'react';
 import './ActorList.css'; 
 import ActorCard from './ActorCard';
-import ActorDetail from './ActorDetail';  // Import the ActorDetail component
+import ActorDetail from './ActorDetail';  
 import { useFetchActorsQuery } from '../api/slices/actorSlice';
 
 const ActorList = () => {
   const { data: actors, error, isLoading } = useFetchActorsQuery();
-  const [selectedActor, setSelectedActor] = useState(null); // State for selected actor
+  const [selectedActor, setSelectedActor] = useState(null);
 
-  if (isLoading) return <p>Loading...</p>;
-  if (error) return <p>Error loading actors.</p>;
+  if (isLoading) {
+    return <p className="loading">Loading actors...</p>;
+  }
+
+  if (error) {
+    return <p className="error">Error loading actors: {error.message || 'Something went wrong.'}</p>;
+  }
 
   const handleActorSelect = (actor) => {
-    setSelectedActor(actor); // Set the selected actor when the "Detail" button is clicked
+    setSelectedActor(actor); 
   };
 
   const middleIndex = Math.ceil(actors?.results.length / 2);
@@ -35,10 +40,9 @@ const ActorList = () => {
         </div>
       </div>
 
-      {/* Render ActorDetail component if an actor is selected */}
       {selectedActor && (
         <>
-          <div className="overlay"></div> {/* Add the overlay */}
+          <div className="overlay"></div>
           <ActorDetail actor={selectedActor} onClose={() => setSelectedActor(null)} />
         </>
       )}

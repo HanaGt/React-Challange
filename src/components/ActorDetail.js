@@ -12,7 +12,7 @@ const ActorDetail = ({ actor, onClose }) => {
         />
       <h2>{actor.name}</h2>
   
-      <p><strong>Height:</strong> {actor.height} cm</p>
+      <p><strong>Height:</strong> {actor.height} cm</p> 
       <p><strong>Mass:</strong> {actor.mass} kg</p>
       <p><strong>Hair Color:</strong> {actor.hair_color}</p>
       <p><strong>Skin Color:</strong> {actor.skin_color}</p>
