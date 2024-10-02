@@ -1,7 +1,7 @@
 import React from 'react';
 import './ActorList.css';
 
-const ActorCard = ({ actor }) => {
+const ActorCard = ({ actor , onSelect}) => {
   return (
     <div className="actor-card">
       <div className="actor-info">
@@ -17,7 +17,9 @@ const ActorCard = ({ actor }) => {
 
         </div>
       </div>
-      <button className="actor-button">DETAIL</button>
+      <button className="actor-button" onClick={onSelect}>
+        Details
+      </button>
     </div>
   );
 };
