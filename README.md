@@ -44,7 +44,7 @@ Here are some screenshots of the application for all sizes(large , medium and sm
    git clone https://github.com/HanaGt/React-Challenge.git
 
 2. Navigate to the project directory:
-    cd star-wars-actors
+    cd React-Challenge
 3. Install the dependencies:
     npm install
 4. Start the application:
